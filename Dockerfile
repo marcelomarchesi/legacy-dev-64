@@ -1,17 +1,8 @@
 FROM ubuntu:14.04
 
 RUN apt-get update -y
-RUN apt-get install -y build-essential git
-RUN apt-get install -y qt4-qmake libqt4-dev
-RUN apt-get install -y gcovr lcov
-RUN apt-get install -y doxygen graphviz mscgen
-RUN apt-get install -y xinetd vnc4server xvfb blackbox x11-apps x11-utils
-RUN apt-get install -y dbus-x11
-RUN apt-get install -y clang-3.6 clang-format-3.6 git
-RUN mkdir -p /var/run/dbus
+RUN apt-get install -y build-essential git unrar bison gettext texinfo wget unzip flex gperf subversion autoconf zlib1g libattr1-dev python lib32z1-dev
 
-ENV DISPLAY :10
-
-COPY runserver.sh /bin
-
-CMD [ "/bin/runserver.sh" ]
+#RUN ssh-keygen -q -t rsa -N '' -f /root/.ssh/id_rsa
+#COPY ./runserver.sh /tmp/
+#CMD [ "/tmp/runserver.sh" ]
