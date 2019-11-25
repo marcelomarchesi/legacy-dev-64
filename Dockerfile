@@ -10,7 +10,7 @@ RUN apt-get install -y gawk
 RUN apt-get install -y default-jre
 
 # For KAON VM1110 image generation
-RUN apt-get install -y wine
+RUN apt-get install -y wine cmake
 
 RUN npm config set strict-ssl false
 RUN npm install -g grunt-cli
