@@ -10,7 +10,7 @@ RUN apt-get install -y gawk
 RUN apt-get install -y default-jre
 
 # For KAON VM1110 image generation
-RUN apt-get install -y wine cmake
+RUN apt-get install -y wine cmake pkg-config
 
 # For SAGEM DSTIH78/RSTIH89 image generation
 RUN apt-get install -y mtd-utils
