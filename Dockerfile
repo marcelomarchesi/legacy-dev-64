@@ -12,6 +12,9 @@ RUN apt-get install -y default-jre
 # For KAON VM1110 image generation
 RUN apt-get install -y wine cmake
 
+# For SAGEM DSTIH78/RSTIH89 image generation
+RUN apt-get install -y mtd-utils
+
 RUN npm config set strict-ssl false
 RUN npm install -g grunt-cli
 RUN ln -s /usr/bin/nodejs /usr/bin/node
