@@ -1,7 +1,7 @@
 FROM i386/ubuntu:14.04
 
 RUN apt-get update 
-RUN apt-get install -y libncurses5-dev build-essential git unrar bison gettext texinfo wget unzip flex gperf subversion autoconf zlib1g libattr1-dev python npm bc
+RUN apt-get install -y vim libncurses5-dev build-essential git unrar bison gettext texinfo wget unzip flex gperf subversion autoconf zlib1g libattr1-dev python npm bc
 
 # For compilation of SAGEM RSTIW384
 RUN apt-get install -y gawk
@@ -13,7 +13,7 @@ RUN apt-get install -y default-jre
 RUN apt-get install -y wine cmake pkg-config
 
 # For SAGEM DSTIH78/RSTIH89 image generation
-RUN apt-get install -y mtd-utils
+RUN apt-get install -y mtd-utils csh
 
 RUN npm config set strict-ssl false
 RUN npm install -g grunt-cli
