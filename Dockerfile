@@ -1,4 +1,4 @@
-FROM i386/ubuntu:14.04
+FROM ubuntu:14.04
 
 RUN apt-get update 
 RUN apt-get install -y vim libncurses5-dev build-essential git unrar bison gettext texinfo wget unzip flex gperf subversion autoconf zlib1g libattr1-dev python npm bc
