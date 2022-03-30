@@ -2,6 +2,7 @@
 
 ## 1 - Build container for 64 bits
 ```sudo docker build -t marcelocorvo/legacy-dev-64 .```
+
 If you want 32bits go to https://github.com/marcelomarchesi/legacy-dev
 
 ## 2 - Run container with ssh id_rsa copy
@@ -9,6 +10,7 @@ If you want 32bits go to https://github.com/marcelomarchesi/legacy-dev
 
 ## 3 - Check if SSH is okay inside container
 ```ssh -v -T git@www.github.com```
+
 
 
 
